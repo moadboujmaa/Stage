@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+.landing {
+  height: calc(100vh - 67px);
+}
+.hover {
+  position: relative;
+}
+.hover::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;  
+  height: 2px;
+  width: 100%;
+  background: blue;
+}
+.title {
+  @apply text-center mb-6 font-bold text-4xl
+}
+.details * {
+  text-align: right;
+}
